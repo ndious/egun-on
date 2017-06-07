@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "4",
-    "console-scope": "git+ssh://git@bitbucket.org:tiimber/console-scope.git",
+    "console-scope": "https://github.com/ndufreche/console-scope.git",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-addons-css-transition-group": "^15.5.2",

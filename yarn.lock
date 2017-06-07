@@ -1439,9 +1439,9 @@ console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
 
-"console-scope@git+ssh://git@bitbucket.org:tiimber/console-scope.git":
+"console-scope@https://github.com/ndufreche/console-scope.git":
   version "1.0.0"
-  resolved "git+ssh://git@bitbucket.org:tiimber/console-scope.git#c0d8ccd0e12c422063b8c29fc9bdca57f8c97b74"
+  resolved "https://github.com/ndufreche/console-scope.git#c0d8ccd0e12c422063b8c29fc9bdca57f8c97b74"
 
 constants-browserify@^1.0.0:
   version "1.0.0"
