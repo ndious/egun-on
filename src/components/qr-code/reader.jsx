@@ -13,7 +13,8 @@ export const ReaderBlock = ({ delay, previewStyle, handleScan, handleError }) =>
         style={previewStyle}
         onError={handleError}
         onScan={handleScan}
-        />
+        facingMode="rear"
+      />
     </div>
   )
 }
