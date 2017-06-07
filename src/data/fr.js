@@ -9,6 +9,6 @@ export default {
   comedy: 'comédie',
   drama: 'drame',
   fantastic: 'fantastique',
-  cinematographic_categories: 'catégoies cinématographiques',
+  cinematographic_categories: 'catégories cinématographiques',
   type_of_movies: 'genre de films'
 }
