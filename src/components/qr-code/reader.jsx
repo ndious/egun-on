@@ -8,13 +8,13 @@ export const ReaderBlock = ({ delay, previewStyle, handleScan, handleError }) =>
   console.scope('containers:home:search')
   return (
     <div>
-        <QrReader
-          delay={delay}
-          style={previewStyle}
-          onError={handleError}
-          onScan={handleScan}
-          />
-      </div>
+      <QrReader
+        delay={delay}
+        style={previewStyle}
+        onError={handleError}
+        onScan={handleScan}
+        />
+    </div>
   )
 }
 

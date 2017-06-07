@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Button, Form, FormGroup, Input } from 'reactstrap'
+import { InputGroup, InputGroupAddon, Input } from 'reactstrap';
 import TiCancel from 'react-icons/lib/ti/cancel'
 
 import { updateSearch, cleanSearch } from './../../../actions/site-type'
@@ -8,12 +8,12 @@ import { updateSearch, cleanSearch } from './../../../actions/site-type'
 export const SearchBlock = ({ search, handleChange, handleClick }) => {
   console.scope('containers:home:search')
   return (
-    <Form>
-      <FormGroup>
-        <Button onClick={handleClick}><TiCancel /></Button>
+    <nav className="navbar navbar-light bg-faded">
+      <InputGroup>
+        <InputGroupAddon onClick={handleClick}><TiCancel /></InputGroupAddon>
         <Input type="text" name="search" id="searchInput" value={search} onChange={handleChange} />
-      </FormGroup>
-    </Form>
+      </InputGroup>
+    </nav>
   )
 }
 

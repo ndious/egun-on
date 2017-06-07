@@ -1,14 +1,20 @@
 import React from 'react'
 import Reader from './reader'
+import { Container } from 'reactstrap'
+
+import Nav from './../nav'
 
 const QrCode = () => {
   console.scope('pages:qr-code')
 
   return (
-    <div>
-      <p>Filmez l'affiche pour découvrir le thème</p>
-      <Reader />
-    </div>
+    <span>
+      <Nav />
+      <Container>
+        <p>Filmez l'affiche pour découvrir le thème</p>
+        <Reader />
+      </Container>
+    </span>
   )
 }
 

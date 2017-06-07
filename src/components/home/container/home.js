@@ -5,17 +5,17 @@ import routeFor from 'react-route-config'
 import TiCamera from 'react-icons/lib/ti/camera'
 
 
-const Home = () => (<span>
+const Home = ({ iconStyle }) => (<span>
   <h1>Egun on</h1>
   <h2>Bonjour</h2>
-  <Link to={routeFor('qr-code')}><TiCamera /></Link>
+  <Link to={routeFor('qr-code')}><TiCamera style={iconStyle} /></Link>
 </span>)
 
-const HomeBlock = ({ is_searching }) => {
+const HomeBlock = ({ is_searching, iconStyle }) => {
   console.scope('containers:home:result')
   return (
     <span>
-      {!is_searching && <Home />}
+      {!is_searching && <Home iconStyle={iconStyle} />}
     </span>
   )
 }
@@ -23,6 +23,13 @@ const HomeBlock = ({ is_searching }) => {
 const mapStateToProps = state => {
   return {
     is_searching: state.site.search.length !== 0,
+    iconStyle: {
+      height: '200px',
+      width: '100%',
+      marginLeft: '-15px',
+      position: 'fixed',
+      bottom: '10px',
+    }
   }
 }
 

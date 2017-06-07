@@ -1,10 +1,9 @@
 import React from 'react'
-import { Container } from 'reactstrap'
 
 const Layout = ({ children }) => (
-  <Container className="App">
+  <span className="App">
     {children}
-  </Container>
+  </span>
 );
 
 export default Layout

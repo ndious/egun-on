@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container } from 'reactstrap'
 
 import Search from './container/search'
 import Result from './container/result'
@@ -8,11 +9,13 @@ const Home = () => {
   console.scope('pages:home')
 
   return (
-    <div>
+    <span>
       <Search />
-      <Result />
-      <HomeBlock />
-    </div>
+      <Container>
+        <Result />
+        <HomeBlock />
+      </Container>
+    </span>
   )
 }
 
