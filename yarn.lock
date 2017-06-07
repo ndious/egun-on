@@ -4921,7 +4921,7 @@ react-redux@^5.0.5:
 
 "react-route-config@https://github.com/ndufreche/react-route-config.git":
   version "1.0.0"
-  resolved "https://github.com/ndufreche/react-route-config.git#b4938583df26b67d6513e5cc5c69de17050f3218"
+  resolved "https://github.com/ndufreche/react-route-config.git#b2afa86662e062f6a6c56730565831ed708f321e"
 
 react-router-redux@^4.0.8:
   version "4.0.8"
