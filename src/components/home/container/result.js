@@ -22,7 +22,7 @@ const ResultBlock = ({ is_searching, words }) => {
 const mapStateToProps = state => {
   return {
     is_searching: state.site.search.length !== 0,
-    words: state.dictionary.filter(word => word.trans.includes(state.site.search))
+    words: state.dictionary.filter(word => word.trans.includes(state.site.search.toLowerCase()))
   }
 }
 
