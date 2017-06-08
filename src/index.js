@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
+import registerServiceWorker from './registerServiceWorker'
 
 import 'console-scope'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -14,6 +15,7 @@ console.defineScope(' A Tiimber dev society program ', 'red', 'font-size:20px; t
 console.scope(' A Tiimber dev society program ')
 
 load()
+registerServiceWorker()
 
 render(
   <Provider store={store}>
