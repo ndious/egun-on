@@ -9,8 +9,7 @@ const ThemeBlock = ({ theme, handleRender, handleCilck }) => {
   console.scope('containers:theme', theme)
   return (
     <span>
-      <h1>{theme.name.eusk}</h1>
-      <h2>{theme.name.trans}</h2>
+      <h1>{theme.name.eusk} <small>{theme.name.trans}</small></h1>
       {theme.categories.map(category => <CategoryBlock key={category.id} {...category} handleCilck={handleCilck} />)}
       <WordsBlock theme={theme} />
       {handleRender(theme.categories[0].id)}

@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 
 import 'console-scope'
 import 'bootstrap/dist/css/bootstrap.css'
+import './app.css'
 
 import Routing from './components/routing.jsx'
 import store from './store'
