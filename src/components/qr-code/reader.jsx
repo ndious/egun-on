@@ -24,6 +24,7 @@ const mapStateToProps = state => ({
   previewStyle: {
     height: 240,
     width: 320,
+    margin: '100px auto 0';
   }
 })
 
